@@ -136,3 +136,8 @@ let loop = function () {
 }
 
 loop()
+
+document.querySelectorAll(".block button")[0].onclick = () => {
+    document.querySelectorAll(".name")[0].innerText = document.querySelectorAll(".block input")[0].value;
+    document.querySelectorAll(".block")[0].classList.remove("active");
+}
